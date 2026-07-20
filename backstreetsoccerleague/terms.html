@@ -6,69 +6,88 @@
 <title>Kullanım Şartları — Backstreet Soccer League</title>
 <style>
   :root { color-scheme: dark; }
-  body { margin:0; padding:28px 18px 60px; background:#0e1726; color:#e8edf5;
+  body { margin:0; padding:16px 18px 60px; background:#0e1726; color:#e8edf5;
          font:15px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
   main { max-width:720px; margin:0 auto; }
   h1 { font-size:24px; margin:0 0 4px; }
   h2 { font-size:17px; margin:26px 0 8px; color:#ffd873; }
   .meta { color:#93a3ba; font-size:13px; margin-bottom:22px; }
-  .lang { border-top:1px dashed #33445e; margin-top:38px; padding-top:26px; }
   ul { padding-left:20px; }
   li { margin:6px 0; }
   a { color:#7fc4ff; }
   .back { display:inline-block; margin-top:30px; color:#93a3ba; font-size:13px; }
+  /* v1479: dil çubuğu — sağ üstte, tek dil gösterilir */
+  .langbar { display:flex; justify-content:flex-end; gap:6px; margin-bottom:10px;
+             position:sticky; top:0; padding:8px 0; background:#0e1726; z-index:2; }
+  .langbar button { background:#1b2740; color:#93a3ba; border:1px solid #33445e; border-radius:8px;
+                    padding:5px 11px; font:13px inherit; cursor:pointer; }
+  .langbar button[aria-pressed="true"] { background:#2b4b7d; color:#e8edf5; border-color:#4a72b0; }
+  [data-lang] { display:none; }
+  [data-lang].on { display:block; }
 </style>
 </head>
 <body>
 <main>
-  <h1>📜 Kullanım Şartları</h1>
-  <div class="meta">Backstreet Soccer League · TPCK GAMES · Sürüm 2 · Son güncelleme: 20 Temmuz 2026</div>
+  <div class="langbar">
+    <button type="button" data-set="tr" aria-pressed="true">🇹🇷 Türkçe</button>
+    <button type="button" data-set="en" aria-pressed="false">🇬🇧 English</button>
+  </div>
 
-  <h2>1. Kabul</h2>
-  <p>Backstreet Soccer League'i oynayarak bu şartları ve <a href="privacy.html">Gizlilik Politikası</a>'nı
-  kabul etmiş olursun. Kabul etmiyorsan lütfen oyunu kullanma.</p>
+  <section data-lang="tr" class="on">
+    <h1>📜 Kullanım Şartları</h1>
+    <div class="meta">Backstreet Soccer League · TPCK GAMES · Sürüm 2 · Son güncelleme: 20 Temmuz 2026</div>
 
-  <h2>2. Oyun ve hesap</h2>
-  <ul>
-    <li>Oyun kişisel, ticari olmayan kullanım için ücretsizdir.</li>
-    <li>Hesap açman gerekmez. İlerlemen yalnızca kendi cihazında saklanır.</li>
-    <li>Hile, tersine mühendislik ve oyunu bozan müdahaleler yasaktır.</li>
-  </ul>
+    <h2>1. Kabul</h2>
+    <p>Backstreet Soccer League'i oynayarak bu şartları ve <a href="privacy.html">Gizlilik Politikası</a>'nı
+    kabul etmiş olursun. Kabul etmiyorsan lütfen oyunu kullanma.</p>
 
-  <h2>3. Oyun içi para</h2>
-  <ul>
-    <li>💰 para ve ⭐ puan yalnız oyun içi <b>sanal</b> değerlerdir; gerçek para karşılığı YOKTUR,
-      devredilemez ve iade edilemez.</li>
-    <li>Bu sürümde gerçek parayla satın alma ve reklam <b>yoktur</b>. İleride eklenirse, satın alma
-      ve iade koşulları ilgili mağazanın (App Store / Google Play) kurallarına tabidir ve bu şartlar
-      güncellenir.</li>
-  </ul>
+    <h2>2. Oyun ve hesap</h2>
+    <ul>
+      <li>Oyun kişisel, ticari olmayan kullanım için ücretsizdir.</li>
+      <li>Hesap açman gerekmez. İlerlemen yalnızca kendi cihazında saklanır.</li>
+      <li>Hile, tersine mühendislik ve oyunu bozan müdahaleler yasaktır.</li>
+    </ul>
 
-  <h2>4. Fikri mülkiyet</h2>
-  <p>Oyun, kodu, görselleri ve adı TPCK GAMES'e aittir. Müzikler Pixabay ücretsiz lisansı
-  kapsamındadır. İçerikleri izinsiz kopyalayamaz, dağıtamaz veya ticari olarak kullanamazsın.</p>
+    <h2>3. Oyun içi para</h2>
+    <ul>
+      <li>💰 para ve ⭐ puan yalnız oyun içi <b>sanal</b> değerlerdir; gerçek para karşılığı YOKTUR,
+        devredilemez ve iade edilemez.</li>
+      <li>Bu sürümde gerçek parayla satın alma ve reklam <b>yoktur</b>. İleride eklenirse, satın alma
+        ve iade koşulları ilgili mağazanın (App Store / Google Play) kurallarına tabidir ve bu şartlar
+        güncellenir.</li>
+    </ul>
 
-  <h2>5. Sorumluluk sınırı</h2>
-  <p>Oyun "olduğu gibi" sunulur; kesintisiz veya hatasız çalışacağı garanti edilmez. Cihazında
-  saklanan ilerlemenin kaybından (cihaz değişimi, tarayıcı verisi temizliği, uygulamanın silinmesi vb.)
-  geliştirici sorumlu tutulamaz.</p>
+    <h2>4. Fikri mülkiyet</h2>
+    <p>Oyun, kodu, görselleri ve adı TPCK GAMES'e aittir. Müzikler Pixabay ücretsiz lisansı
+    kapsamındadır. İçerikleri izinsiz kopyalayamaz, dağıtamaz veya ticari olarak kullanamazsın.</p>
 
-  <h2>6. Değişiklik ve iletişim</h2>
-  <p>Şartlar değişirse sürüm numarası artar ve oyun ilk açılışta yeniden onay ister.
-  İletişim: <a href="mailto:hello@tpckgames.com">hello@tpckgames.com</a></p>
+    <h2>5. Sorumluluk sınırı</h2>
+    <p>Oyun "olduğu gibi" sunulur; kesintisiz veya hatasız çalışacağı garanti edilmez. Cihazında
+    saklanan ilerlemenin kaybından (cihaz değişimi, tarayıcı verisi temizliği, uygulamanın silinmesi vb.)
+    geliştirici sorumlu tutulamaz.</p>
 
-  <div class="lang" lang="en">
-    <h1>📜 Terms of Use (English)</h1>
+    <h2>6. Değişiklik ve iletişim</h2>
+    <p>Şartlar değişirse sürüm numarası artar ve oyun ilk açılışta yeniden onay ister.
+    İletişim: <a href="mailto:hello@tpckgames.com">hello@tpckgames.com</a></p>
+
+    <a class="back" href="./">← Oyun sayfası</a>
+  </section>
+
+  <section data-lang="en" lang="en">
+    <h1>📜 Terms of Use</h1>
     <div class="meta">Backstreet Soccer League · TPCK GAMES · Version 2 · Last updated: July 20, 2026</div>
+
     <h2>1. Acceptance</h2>
     <p>By playing Backstreet Soccer League you accept these terms and the
     <a href="privacy.html">Privacy Policy</a>. If you do not accept them, please do not use the game.</p>
+
     <h2>2. Game &amp; account</h2>
     <ul>
       <li>The game is free for personal, non-commercial use.</li>
       <li>No account is required. Your progress is stored only on your own device.</li>
       <li>Cheating, reverse engineering and interference that breaks the game are prohibited.</li>
     </ul>
+
     <h2>3. In-game currency</h2>
     <ul>
       <li>💰 cash and ⭐ points are <b>virtual</b> in-game values only; they have NO real-world value,
@@ -77,19 +96,53 @@
         added later, purchases and refunds will follow the rules of the relevant store
         (App Store / Google Play) and these terms will be updated.</li>
     </ul>
+
     <h2>4. Intellectual property</h2>
     <p>The game, its code, art and name belong to TPCK GAMES. Music is used under the Pixabay
     free license. You may not copy, distribute or commercially exploit the content without permission.</p>
+
     <h2>5. Limitation of liability</h2>
     <p>The game is provided "as is" with no guarantee of uninterrupted or error-free operation.
     The developer is not liable for progress lost from your device (device change, browser data
     cleanup, app deletion, etc.).</p>
+
     <h2>6. Changes &amp; contact</h2>
     <p>If these terms change, the version number increases and the game asks for consent again.
     Contact: <a href="mailto:hello@tpckgames.com">hello@tpckgames.com</a></p>
-  </div>
 
-  <a class="back" href="./">← Oyun sayfası / Game page</a>
+    <a class="back" href="./">← Game page</a>
+  </section>
 </main>
+
+<script>
+// Dil seçimi: ?lang=en → oyunun dili neyse onunla açılır. Kullanıcı sağ üstten değiştirebilir.
+// Seçim localStorage'a yazılır → politika sayfaları arası (şartlar ↔ gizlilik) taşınır.
+(function () {
+  var KEY = 'kck2d_policy_lang';
+  function pick() {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      if (q === 'tr' || q === 'en') return q;
+      var s = localStorage.getItem(KEY);
+      if (s === 'tr' || s === 'en') return s;
+    } catch (e) {}
+    return (navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+  }
+  function apply(L) {
+    document.documentElement.lang = L;
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('on', el.getAttribute('data-lang') === L);
+    });
+    document.querySelectorAll('.langbar button').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === L));
+    });
+    try { localStorage.setItem(KEY, L); } catch (e) {}
+  }
+  document.querySelectorAll('.langbar button').forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set')); });
+  });
+  apply(pick());
+})();
+</script>
 </body>
 </html>
