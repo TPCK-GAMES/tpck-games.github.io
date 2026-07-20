@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TPCK GAMES — Backstreet Soccer League</title>
+<meta name="description" content="TPCK GAMES · Backstreet Soccer League — sokak futbolu oyunu. 10 şut at, kaleye geç, liglerde yüksel.">
+<style>
+  :root{
+    --asphalt:#13161a; --chalk:#eef2f0; --chalk-dim:#aeb8b6;
+    --accent:#a9d9a0; --accent-ink:#16281a; --line:rgba(238,242,240,.12);
+    color-scheme: dark;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--asphalt); color:var(--chalk);
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background-image:radial-gradient(120% 70% at 50% 0,rgba(169,217,160,.06),transparent 60%);
+  }
+  .wrap{ max-width:960px; margin:0 auto; padding:44px 20px 70px; }
+
+  .studiobar{ margin-bottom:34px; }
+  .studiobar img{ height:52px; width:auto; display:block; }
+  header{ display:flex; align-items:center; gap:16px; margin-bottom:8px; }
+  header .gameicon{ width:64px; height:64px; border-radius:14px; }
+  .studio{ font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent); margin:0 0 2px; }
+  h1{ font-size:clamp(26px,5.5vw,40px); margin:0; letter-spacing:-.02em; line-height:1.1; }
+  .tag{ color:var(--chalk-dim); margin:14px 0 0; font-size:17px; max-width:56ch; }
+
+  .cta{ display:flex; flex-wrap:wrap; gap:12px; margin:26px 0 8px; }
+  .btn{ display:inline-block; padding:13px 22px; border-radius:14px 10px 16px 9px; text-decoration:none;
+        font-weight:800; letter-spacing:.02em; transform:rotate(-.5deg); }
+  .btn-1{ background:var(--accent); color:var(--accent-ink); }
+  .btn-2{ border:2px dashed var(--chalk-dim); color:var(--chalk); transform:rotate(.4deg); }
+
+  h2{ font-size:20px; margin:44px 0 14px; padding-top:22px; border-top:1px solid var(--line); }
+  .shots{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; }
+  .shots img{ width:100%; border-radius:12px; border:1px solid var(--line); display:block; }
+
+  .feat{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:20px; }
+  .feat h3{ font-size:15px; margin:0 0 4px; color:var(--accent); }
+  .feat p{ margin:0; color:var(--chalk-dim); font-size:14.5px; }
+
+  a{ color:var(--accent); }
+  footer{ margin-top:52px; padding-top:20px; border-top:1px solid var(--line);
+          color:var(--chalk-dim); font-size:14px; display:flex; flex-wrap:wrap; gap:8px 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="studiobar">
+    <a href="/"><img src="../img/tpck-logo.png" alt="TPCK GAMES"></a>
+  </div>
+
+  <header>
+    <img class="gameicon" src="img/icon.png" alt="Backstreet Soccer League ikonu">
+    <div>
+      <p class="studio">Bir TPCK Games oyunu</p>
+      <h1>Backstreet Soccer League</h1>
+    </div>
+  </header>
+
+  <p class="tag">Sokak futbolunun en eğlenceli hâli. <b>10 şut at</b>, sonra <b>kaleye geç</b> —
+  mahalle sahasından ulusal lige kadar yüksel.</p>
+
+  <div class="cta">
+    <a class="btn btn-1" href="https://backstreetsoccerleague.vercel.app/">▶ Hemen oyna</a>
+    <a class="btn btn-2" href="privacy.html">Gizlilik politikası</a>
+  </div>
+
+  <h2>Oyundan kareler</h2>
+  <div class="shots">
+    <img src="img/appstore_ss1_1290x2796.png" alt="Gol sevinci" loading="lazy">
+    <img src="img/appstore_ss2_1290x2796.png" alt="Gece maçı" loading="lazy">
+    <img src="img/appstore_ss3_1290x2796.png" alt="Karakter oluşturma" loading="lazy">
+  </div>
+
+  <h2>Öne çıkanlar</h2>
+  <div class="feat">
+    <div>
+      <h3>İki rol, tek maç</h3>
+      <p>İlk devre golcüsün, ikinci devre kalecisin. Attığın kadar kurtardığın da önemli.</p>
+    </div>
+    <div>
+      <h3>Kendi oyuncunu yarat</h3>
+      <p>Yüz, saç, forma, amblem, takım adı ve gol sevinci — karakterin tamamen senin.</p>
+    </div>
+    <div>
+      <h3>Mahalleden ulusale</h3>
+      <p>Sokak sahasından başla; sezon sezon terfi ederek altı lig basamağını tırman.</p>
+    </div>
+    <div>
+      <h3>İnternetsiz oynanır</h3>
+      <p>Hesap yok, reklam yok, takip yok. İlerlemen yalnızca kendi cihazında saklanır.</p>
+    </div>
+  </div>
+
+  <h2>İletişim</h2>
+  <p>Soru, öneri ve hata bildirimleri için:
+  <a href="mailto:tpckgames@gmail.com">tpckgames@gmail.com</a></p>
+
+  <footer>
+    <span>© 2026 TPCK GAMES</span>
+    <a href="privacy.html">Gizlilik politikası</a>
+    <a href="mailto:tpckgames@gmail.com">tpckgames@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
