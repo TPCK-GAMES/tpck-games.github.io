@@ -35,15 +35,17 @@
 
   <section data-lang="tr" class="on">
     <h1>🔒 Gizlilik Politikası</h1>
-    <div class="meta">Backstreet Soccer League · TPCK GAMES · Sürüm 4 · Son güncelleme: 15 Ağustos 2026</div>
+    <div class="meta">Backstreet Soccer League · TPCK GAMES · Sürüm 6 · Son güncelleme: 25 Ağustos 2026</div>
 
     <h2>1. Kısaca</h2>
-    <p>Backstreet Soccer League, oyun ilerlemeni <b>yalnızca senin cihazında</b> saklayan ücretsiz bir
-    futbol oyunudur. Hesap açman gerekmez ve oyun internet olmadan oynanır. <b>Senden ad, e-posta,
-    telefon gibi kişisel bilgi istemiyoruz; hesabın yok ve oyun kaydın bizde değil. Hiçbir veriyi
-    satmıyor, pazarlama için paylaşmıyoruz.</b> Bunun tek istisnası reklamlardır: reklam
-    gösterilirken Google cihazının reklam tanımlayıcısını işler — ayrıntısı 3. bölümde.</p>
-    <p><b>Tek istisna reklamlardır.</b> Mobil uygulama sürümünde <b>ödüllü reklam</b> bulunur:
+    <p>Backstreet Soccer League, oyun ilerlemeni cihazında saklayan ücretsiz bir futbol oyunudur.
+    iOS sürümünde, cihazındaki Apple hesabında iCloud açıksa, ilerleme ayrıca otomatik olarak
+    <b>senin iCloud key-value alanına</b> eşitlenir. Oyun hesabı açman gerekmez ve oyun internet
+    olmadan oynanır. <b>Senden ad, e-posta veya telefon istemiyoruz; TPCK GAMES sunucusunda hesabın
+    ya da oyun kaydının bir kopyası yoktur. Veriyi satmıyor ve pazarlama için paylaşmıyoruz.</b>
+    Cihaz dışındaki iki teknik yol Apple iCloud kaydı ve reklam hizmetidir. <b>Uygulama içi satın
+    alma</b> yaptığında ödemeyi mağaza alır; kart ve fatura bilgin bize hiç ulaşmaz (2. bölüm).</p>
+    <p><b>Reklam tarafı ayrıdır.</b> Mobil uygulama sürümünde <b>ödüllü reklam</b> bulunur:
     oyun sana hiçbir zaman reklam dayatmaz — reklam yalnızca <b>sen "reklam izle" düğmesine
     bastığında</b> gösterilir ve karşılığında oyun içi ödül alırsın. Bu reklamları Google (AdMob)
     yayınlar; o sırada Google'ın işlediği veriler aşağıda 3. bölümde açıklanmıştır.
@@ -51,24 +53,33 @@
 
     <h2>2. Hangi veriler, nerede?</h2>
     <ul>
-      <li><b>Oyun kaydı (yalnızca cihazda):</b> skor, lig ilerlemesi, kozmetikler ve ayarlar
-        uygulamanın yerel deposunda (localStorage) tutulur. <b>Bu veriler cihazından ÇIKMAZ</b>,
-        hiçbir sunucuya gönderilmez. Uygulamayı kaldırırsan bu veriler silinir.</li>
-      <li><b>Hesap / bulut kaydı:</b> <b>YOKTUR.</b> Oyun senden e-posta, şifre veya hesap istemez;
-        kimliğini doğrulamaz. (Uygulamada ileride kullanılmak üzere hazırlanmış, <b>şu anda tamamen
-        devre dışı</b> bir bulut yedekleme altyapısı bulunur; etkin olmadığı için hiçbir veri
-        gönderilmez. Etkinleştirilirse bu politika güncellenir ve senden ayrıca onay istenir.)</li>
+      <li><b>Oyun kaydı:</b> skor, lig ilerlemesi, kozmetikler ve ayarlar uygulamanın yerel deposunda
+        tutulur. iOS'ta iCloud açıksa aynı kayıt Apple'ın <b>iCloud key-value store</b> hizmetiyle
+        aynı Apple hesabındaki cihazlara otomatik eşitlenir. Uygulamayı kaldırmak yerel kopyayı siler;
+        iCloud kopyası varsa yeniden kurulumda geri gelebilir.</li>
+      <li><b>Hesap / bulut kaydı:</b> Ayrı bir oyun hesabı <b>YOKTUR</b>; e-posta, şifre veya TPCK
+        GAMES girişi istemeyiz. iCloud eşitlemesi cihazındaki Apple hesabı üzerinden Apple tarafından
+        yürütülür. Kaydı kendi sunucumuza göndermeyiz, göremeyiz ve uzaktan inceleyemeyiz. iCloud
+        kapalıysa oyun yerel kaydetmeye ve çevrimdışı çalışmaya devam eder.</li>
       <li><b>Reklamlar:</b> mobil uygulamada <b>yalnızca ödüllü reklam</b> vardır ve yalnızca
         <b>sen izlemeyi seçtiğinde</b> gösterilir. Banner, açılış reklamı veya oyunu kesen reklam
         <b>yoktur</b>. Ayrıntı için 3. bölüme bak. Web sürümünde reklam bulunmaz.</li>
       <li><b>Kendi analitiğimiz: YOKTUR.</b> Oyuna hiçbir analitik aracı veya izleme pikseli
-        koymadık. Oyun içi istatistiklerin (maç sayısı, gol, seri vb.) yalnız senin cihazında
-        tutulur ve <b>bize gönderilmez</b>.</li>
+        koymadık. Oyun içi istatistiklerin yerel kaydın parçasıdır; iCloud açıksa diğer kayıt
+        verileriyle birlikte kendi iCloud alanına eşitlenir ama <b>bize gönderilmez</b>.</li>
       <li><b>Reklam tarafındaki izleme:</b> burası ayrıdır ve dürüst olmak gerekir. Google,
         reklamları seçmek ve ölçmek için <b>cihazının reklam tanımlayıcısını</b> kullanır. Apple bunu
         <b>"izleme" (tracking)</b> olarak tanımlar; bu yüzden App Store'daki gizlilik etiketimizde de
         izleme <b>var</b> olarak beyan edilir. iOS'ta izleme izni sorusuna <b>"izin verme"</b> dersen
         bu tanımlayıcı kullanılmaz ve reklamlar kişiselleştirilmez — ödülünü yine alırsın.</li>
+      <li><b>Uygulama içi satın alma:</b> ödemeyi <b>mağaza</b> (App Store) alır. Kart numaran,
+        fatura adresin ve mağaza hesabın <b>bize hiç ulaşmaz</b>. Süresiz ürün sahipliğinin kaynağı
+        StoreKit'tir ve "Satın Alımları Geri Yükle" ile doğrulanır. Tüketilebilir bir ürünün iki kez
+        verilmesini önlemek için teslim edilmiş işlem kimlikleri, fiyat veya ödeme bilgisi olmadan,
+        yalnız eklemeli bir liste olarak kendi iCloud kaydına eşitlenebilir. Bu liste bize gönderilmez.</li>
+      <li><b>Çökme ve performans teşhisi:</b> Google'ın reklam bileşeni, kendi hizmetini
+        sürdürebilmek için çökme ve performans verisi işleyebilir; App Store gizlilik etiketimizde
+        bu kalem de beyan edilmiştir. Bu veri <b>bize gelmez</b>, Google tarafında işlenir.</li>
     </ul>
 
     <h2>3. Ödüllü reklamlar (mobil uygulama)</h2>
@@ -116,7 +127,8 @@
     <h2>5. Çocukların gizliliği</h2>
     <p>Bu oyun <b>genel kitleye yöneliktir</b>; özellikle çocuklara yönelik tasarlanmamıştır ve
     13 yaşın altındaki çocuklardan bilerek veri toplamayız. Oyunun kendisi hiç kimseden ad/e-posta
-    gibi kişisel bilgi istemez — hesap yoktur, kayıtların cihazında kalır. Reklam tarafında işlenen
+    gibi kişisel bilgi istemez; oyun hesabı yoktur. Kayıt cihazında, iCloud açıksa kendi Apple
+    hesabının iCloud alanında kalır. Reklam tarafında işlenen
     veriler için 3. bölüme bak.</p>
     <p>Reklam tarafında: uygulama, Google'a <b>çocuklara yönelik olmadığını</b> bildirir. Çocuğunuzun
     cihazında kişiselleştirilmiş reklam istemiyorsanız, cihaz ayarlarından reklam kişiselleştirmesini
@@ -128,7 +140,7 @@
     <p>Oyun içindeki geri bildirim düğmesine bastığında cihazının e-posta uygulaması bir <b>taslak</b>
     mesajla açılır. Sorunu anlamamıza yardımcı olması için taslağa yalnızca <b>teknik satırlar</b>
     eklenir: oyun sürümü, dil, cihaz/tarayıcı bilgisi, ekran ölçüsü ve yerel saat.
-    <b>Oyun istatistiklerin taslağa EKLENMEZ</b> — onlar cihazında kalır.
+    <b>Oyun istatistiklerin taslağa EKLENMEZ</b>; e-posta yoluyla bize gönderilmez.
     <b>Mesajı sen göndermeyi seçmedikçe bize hiçbir bilgi ulaşmaz</b>; göndermeden önce içeriği
     görebilir, istemediğin satırları silebilirsin. Arka planda otomatik gönderim yoktur.</p>
     <p>Doğal olarak, mesajı <b>gönderirsen</b> e-posta adresin ve yazdıkların bize ulaşır — her
@@ -143,8 +155,10 @@
 
     <h2>7. Haklar ve iletişim</h2>
     <p>KVKK/GDPR kapsamında verine erişme, düzeltme ve silme hakların vardır. <b>Bizde bir hesabın
-    veya sunucu kaydın yoktur</b>; oyun kaydın cihazında durur ve uygulamayı kaldırarak dilediğin
-    zaman silebilirsin. Bize e-posta yazdıysan o yazışmayı silmemizi isteyebilirsin. Reklam tarafında
+    veya sunucu kaydın yoktur</b>; yerel kariyerlerini oyun içindeki Kariyerler ekranından silebilirsin.
+    iCloud eşitlemesini cihaz ayarlarından kapatabilir ve Apple'ın iCloud yönetim seçeneklerinden
+    uygulamaya ait iCloud verisini yönetebilirsin. Bize e-posta yazdıysan o yazışmayı silmemizi
+    isteyebilirsin. Reklam tarafında
     işlenen veriler <b>Google'ın elindedir</b>: cihaz ayarlarından reklam kimliğini sıfırlayabilir,
     iOS'ta izlemeyi kapatabilir, Avrupa'daysan Ayarlar'daki reklam tercihleri ekranından seçimini
     değiştirebilirsin. Soru ve talepler için:
@@ -158,39 +172,50 @@
 
   <section data-lang="en" lang="en">
     <h1>🔒 Privacy Policy</h1>
-    <div class="meta">Backstreet Soccer League · TPCK GAMES · Version 4 · Last updated: August 15, 2026</div>
+    <div class="meta">Backstreet Soccer League · TPCK GAMES · Version 6 · Last updated: August 25, 2026</div>
 
     <h2>1. In short</h2>
-    <p>Backstreet Soccer League is a free football game that stores your progress <b>only on your
-    device</b>. No account is required and the game works offline. <b>We do not ask you for personal
-    details such as your name, e-mail or phone number; you have no account and we hold no copy of
-    your save. We never sell data or share it for marketing.</b> Advertising is the one exception:
-    while an ad is served, Google processes your device advertising identifier — see section 3.</p>
-    <p><b>Ads are the one exception.</b> The mobile app includes <b>rewarded ads</b>: the game never
+    <p>Backstreet Soccer League is a free football game that stores progress on your device. On iOS,
+    when iCloud is enabled for the Apple account on the device, progress also syncs automatically to
+    <b>your iCloud key-value store</b>. No game account is required and the game works offline.
+    <b>We do not ask for your name, e-mail or phone number; TPCK GAMES has no account or server copy
+    of your save. We never sell data or share it for marketing.</b> The two technical paths outside
+    the device are Apple iCloud save and advertising. For <b>in-app purchases</b>, the store takes
+    payment and your card or billing details never reach us (section 2).</p>
+    <p><b>The advertising side is separate.</b> The mobile app includes <b>rewarded ads</b>: the game never
     forces an ad on you — an ad is shown <b>only when you tap "watch ad"</b>, and you get an in-game
     reward for it. These ads are served by Google (AdMob); what Google processes at that moment is
     explained in section 3. <b>The web browser version has no ads at all.</b></p>
 
     <h2>2. What data, where?</h2>
     <ul>
-      <li><b>Game save (on your device only):</b> scores, league progress, cosmetics and settings live
-        in local storage (localStorage). This data <b>never leaves your device</b> and is not sent to
-        any server. Uninstalling the app deletes it.</li>
-      <li><b>Accounts / cloud save: NONE.</b> The game never asks for an e-mail, password or account.
-        (The app contains a cloud-backup component prepared for possible future use, but it is
-        <b>currently fully disabled</b> and transmits nothing. If it is ever enabled, this policy will
-        be updated and your explicit consent requested.)</li>
+      <li><b>Game save:</b> scores, league progress, cosmetics and settings live in local storage.
+        On iOS with iCloud enabled, the same save syncs between devices on the same Apple account
+        through Apple's <b>iCloud key-value store</b>. Uninstalling removes the local copy; an iCloud
+        copy may return automatically after reinstalling.</li>
+      <li><b>Accounts / cloud save:</b> There is <b>no separate game account</b>; we never ask for an
+        e-mail, password or TPCK GAMES login. Apple operates iCloud sync through the Apple account on
+        your device. We do not send the save to our own server, cannot see it and cannot inspect it
+        remotely. If iCloud is disabled, local saving and offline play continue.</li>
       <li><b>Ads:</b> the mobile app contains <b>rewarded ads only</b>, shown <b>only when you
         choose to watch one</b>. There are <b>no</b> banners, no app-open ads and no ads that
         interrupt play. See section 3. The web version contains no ads.</li>
-      <li><b>Our own analytics: NONE.</b> We have not added any analytics tool or tracking pixel
-        to the game. Your in-game statistics (matches, goals, streaks, etc.) stay on your device and
-        are <b>never sent to us</b>.</li>
+      <li><b>Our own analytics: NONE.</b> We have not added any analytics tool or tracking pixel.
+        In-game statistics are part of the save and may sync to your own iCloud storage with the
+        rest of it, but are <b>never sent to us</b>.</li>
       <li><b>Tracking on the advertising side:</b> this part is different, and we should be straight
         about it. Google uses your <b>device advertising identifier</b> to select and measure ads.
         Apple classifies this as <b>tracking</b>, which is why our App Store privacy label declares
         tracking as <b>present</b>. If you choose <b>"Ask App Not to Track"</b> on iOS, that
         identifier is not used and ads are not personalised — you still get your reward.</li>
+      <li><b>In-app purchases:</b> payment is handled by the <b>store</b> (App Store). Your card
+        number, billing address and store account <b>never reach us</b>. StoreKit remains the source
+        for non-consumable ownership and verifies it through "Restore Purchases". To prevent a
+        consumable from being granted twice, identifiers of delivered transactions may sync as an
+        append-only list inside your iCloud save, without price or payment details. We never receive it.</li>
+      <li><b>Crash &amp; performance diagnostics:</b> Google's ads component may process crash and
+        performance data to keep its own service running; this item is declared in our App Store
+        privacy label too. That data <b>does not come to us</b> — it is processed on Google's side.</li>
     </ul>
 
     <h2>3. Rewarded ads (mobile app)</h2>
@@ -237,8 +262,9 @@
     <h2>5. Children's privacy</h2>
     <p>This game is intended for a <b>general audience</b>. It is not designed specifically for
     children, and we do not knowingly collect data from children under 13. The game itself never asks
-    anyone for personal details such as a name or e-mail — there are no accounts and your save stays
-    on your device. For what is processed on the advertising side, see section 3.</p>
+    anyone for personal details such as a name or e-mail; there is no game account. Your save stays
+    on the device and, when enabled, in the player's own iCloud storage. For what is processed on the
+    advertising side, see section 3.</p>
     <p>On the advertising side, the app declares to Google that it is <b>not directed to children</b>.
     If you do not want personalised ads on your child's device, you can turn off ad personalisation in
     the device settings or decline personalisation on the consent screen. If you believe a child's data
@@ -248,8 +274,8 @@
     <h2>6. When you send feedback</h2>
     <p>Tapping the in-game feedback button opens your device's e-mail app with a <b>draft</b> message.
     Only <b>technical lines</b> are added to help us understand the issue: game version, language,
-    device/browser info, screen size and local time. <b>Your play statistics are NOT included</b> —
-    they stay on your device.
+    device/browser info, screen size and local time. <b>Your play statistics are NOT included</b> and
+    are not sent to us by e-mail.
     <b>Nothing reaches us unless you choose to send it</b>; you can review the draft and delete any
     line you prefer not to share. There is no automatic background sending.</p>
     <p>Naturally, if you <b>do send</b> the message, your e-mail address and whatever you wrote reach
@@ -264,8 +290,9 @@
 
     <h2>7. Your rights &amp; contact</h2>
     <p>Under GDPR/KVKK you may access, correct and delete your data. <b>You have no account and no
-    server-side record with us</b>; your save lives on your device and you can erase it at any time by
-    uninstalling the app. If you e-mailed us, you can ask us to delete that correspondence. Data
+    server-side record with us</b>. You can delete local careers from the in-game Careers screen,
+    disable iCloud sync in device settings, and manage the app's iCloud data through Apple's iCloud
+    management options. If you e-mailed us, you can ask us to delete that correspondence. Data
     processed on the advertising side is <b>held by Google</b>: you can reset your advertising
     identifier in your device settings, turn off tracking on iOS, or — in Europe — change your choice
     from the ad preferences screen in Settings. Questions and requests:
@@ -307,6 +334,22 @@
   });
   apply(pick());
 })();
+</script>
+<script>
+  /* 🔙 A457 — ÇERÇEVELENMİŞSE GEZİNME, ANA PENCEREYE HABER VER.
+     Bu sayfa oyun içinde bir iframe'de açılıyor. `href="./"` iframe'in İÇİNE oyunun tamamını
+     yüklüyordu — kullanıcının gördüğü "oyunun üstünde ikinci oyun" tam olarak buydu.
+     href KORUNUYOR: belge doğrudan tarayıcıda açıldığında (App Store Connect'teki gizlilik
+     bağlantısı) eskisi gibi çalışsın. Yalnız çerçeve içindeyken davranış değişiyor. */
+  (function () {
+    if (window.parent === window) return;              // çerçevelenmemiş → normal bağlantı
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest && e.target.closest('a.back');
+      if (!a) return;
+      e.preventDefault();
+      try { window.parent.postMessage({ kck2d: 'policy-close' }, window.location.origin); } catch (_) {}
+    });
+  })();
 </script>
 </body>
 </html>
